@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Orders.Application.ViewModels
 {
-    public class ProviderViewModal
+    public class ProviderViewModel
     {
         public IEnumerable<Provider> Providers { get; set; }
     }

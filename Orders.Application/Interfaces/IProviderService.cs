@@ -9,6 +9,6 @@ namespace Orders.Application.Interfaces
 {
     public interface IProviderService
     {
-        IEnumerable<ProviderViewModal> GetProviders();
+        ProviderViewModel GetProviders();
     }
 }
