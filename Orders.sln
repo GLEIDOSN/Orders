@@ -3,6 +3,16 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32630.192
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Orders.Application", "Orders.Application", "{654F0885-29E6-4C01-ACDC-0CBF38AF5D15}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Orders.Domain", "Orders.Domain", "{A7BCD5BD-A342-416C-A81C-877691A9F8BE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Orders.Infra.IoC", "Orders.Infra.IoC", "{89337456-3E62-43D2-80C0-527166C9A4AD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Orders.Infra.Data", "Orders.Infra.Data", "{7F24426E-F8BA-4F9C-A442-E982F10C8EDC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Orders.UI.MVC", "Orders.UI.MVC", "{84ABBFD4-73AD-4BE4-874E-DDFCBF9CB57A}"
+EndProject
 Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
