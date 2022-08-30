@@ -1,0 +1,11 @@
+﻿@model Orders.Application.ViewModels.SupplierViewModel
+
+<div class="container body-content">
+	<div class="row supplier-content">
+		@foreach(var Supllier in Model.Suppliers)
+		{
+			<span>@Supllier.Contact</span>
+		}
+	</div>
+
+</div>

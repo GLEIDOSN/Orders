@@ -2,12 +2,12 @@
 
 namespace Orders.Infra.Data.Migrations
 {
-    public partial class MigrationProvider : Migration
+    public partial class AddSupplier : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "Providers",
+                name: "Suppliers",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
@@ -21,14 +21,14 @@ namespace Orders.Infra.Data.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Providers", x => x.Id);
+                    table.PrimaryKey("PK_Suppliers", x => x.Id);
                 });
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "Providers");
+                name: "Suppliers");
         }
     }
 }

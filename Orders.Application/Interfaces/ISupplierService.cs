@@ -9,6 +9,6 @@ namespace Orders.Application.Interfaces
 {
     public interface ISupplierService
     {
-        ProviderViewModel GetSuppliers();
+        SupplierViewModel GetSuppliers();
     }
 }

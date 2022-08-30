@@ -7,8 +7,8 @@ using System.Threading.Tasks;
 
 namespace Orders.Application.ViewModels
 {
-    public class ProviderViewModel
+    public class SupplierViewModel
     {
-        public IEnumerable<Supplier> Providers { get; set; }
+        public IEnumerable<Supplier> Suppliers { get; set; }
     }
 }

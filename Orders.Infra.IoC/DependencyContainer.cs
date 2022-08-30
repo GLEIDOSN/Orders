@@ -11,7 +11,7 @@ namespace Orders.Infra.IoC
         public static void RegisterServices(IServiceCollection services)
         {
             //Application Layer
-            services.AddScoped<ISupplierService, ProviderService>();
+            services.AddScoped<ISupplierService, SupplierService>();
 
             //Infra.Data Layer
             services.AddScoped<ISupplierRepository, SupplierRepository>();

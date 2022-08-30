@@ -18,7 +18,7 @@ namespace Orders.Infra.Data.Migrations
                 .HasAnnotation("ProductVersion", "5.0.17")
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-            modelBuilder.Entity("Orders.Domain.Models.Provider", b =>
+            modelBuilder.Entity("Orders.Domain.Models.Supplier", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -45,7 +45,7 @@ namespace Orders.Infra.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Providers");
+                    b.ToTable("Suppliers");
                 });
 #pragma warning restore 612, 618
         }

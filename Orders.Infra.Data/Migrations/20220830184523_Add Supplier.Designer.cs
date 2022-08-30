@@ -9,8 +9,8 @@ using Orders.Infra.Data.Context;
 namespace Orders.Infra.Data.Migrations
 {
     [DbContext(typeof(OrdersDBContext))]
-    [Migration("20220830104917_Migration Provider")]
-    partial class MigrationProvider
+    [Migration("20220830184523_Add Supplier")]
+    partial class AddSupplier
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -20,7 +20,7 @@ namespace Orders.Infra.Data.Migrations
                 .HasAnnotation("ProductVersion", "5.0.17")
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-            modelBuilder.Entity("Orders.Domain.Models.Provider", b =>
+            modelBuilder.Entity("Orders.Domain.Models.Supplier", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -47,7 +47,7 @@ namespace Orders.Infra.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Providers");
+                    b.ToTable("Suppliers");
                 });
 #pragma warning restore 612, 618
         }
