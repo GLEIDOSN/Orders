@@ -9,6 +9,6 @@ namespace Orders.Application.ViewModels
 {
     public class ProviderViewModel
     {
-        public IEnumerable<Provider> Providers { get; set; }
+        public IEnumerable<Supplier> Providers { get; set; }
     }
 }

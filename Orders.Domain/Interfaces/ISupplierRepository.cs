@@ -7,8 +7,8 @@ using System.Threading.Tasks;
 
 namespace Orders.Domain.Interfaces
 {
-    public interface IProviderRepository
+    public interface ISupplierRepository
     {
-        IEnumerable<Provider> GetProviders();
+        IEnumerable<Supplier> GetSuppliers();
     }
 }

@@ -7,8 +7,8 @@ using System.Threading.Tasks;
 
 namespace Orders.Application.Interfaces
 {
-    public interface IProviderService
+    public interface ISupplierService
     {
-        ProviderViewModel GetProviders();
+        ProviderViewModel GetSuppliers();
     }
 }

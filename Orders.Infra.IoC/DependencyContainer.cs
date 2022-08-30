@@ -11,10 +11,10 @@ namespace Orders.Infra.IoC
         public static void RegisterServices(IServiceCollection services)
         {
             //Application Layer
-            services.AddScoped<IProviderService, ProviderService>();
+            services.AddScoped<ISupplierService, ProviderService>();
 
             //Infra.Data Layer
-            services.AddScoped<IProviderRepository, ProviderRepository>();
+            services.AddScoped<ISupplierRepository, SupplierRepository>();
         }
     }
 }

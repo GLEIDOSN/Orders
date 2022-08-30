@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Orders.Domain.Models
 {
-    public class Provider
+    public class Supplier
     {
         public int Id { get; set; }
         public string SocialReason { get; set; }

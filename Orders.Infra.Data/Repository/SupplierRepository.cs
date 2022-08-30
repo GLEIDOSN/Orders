@@ -9,18 +9,18 @@ using System.Threading.Tasks;
 
 namespace Orders.Infra.Data.Repository
 {
-    public class ProviderRepository : IProviderRepository
+    public class SupplierRepository : ISupplierRepository
     {
         private readonly OrdersDBContext ordersDBContext;
 
-        public ProviderRepository(OrdersDBContext ordersDBContext)
+        public SupplierRepository(OrdersDBContext ordersDBContext)
         {
             this.ordersDBContext = ordersDBContext;
         }
 
-        public IEnumerable<Provider> GetProviders()
+        public IEnumerable<Supplier> GetSuppliers()
         {
-            return ordersDBContext.Providers;
+            return ordersDBContext.Suppliers;
         }
     }
 }

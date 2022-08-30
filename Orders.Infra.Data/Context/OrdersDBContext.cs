@@ -15,6 +15,6 @@ namespace Orders.Infra.Data.Context
 
         }
 
-        public DbSet<Provider> Providers { get; set; }
+        public DbSet<Supplier> Suppliers { get; set; }
     }
 }

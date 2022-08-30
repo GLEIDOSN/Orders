@@ -9,20 +9,20 @@ using System.Threading.Tasks;
 
 namespace Orders.Application.Services
 {
-    public class ProviderService : IProviderService
+    public class ProviderService : ISupplierService
     {
-        private readonly IProviderRepository providerRepository;
+        private readonly ISupplierRepository supplierRepository;
 
-        public ProviderService(IProviderRepository providerRepository)
+        public ProviderService(ISupplierRepository supplierRepository)
         {
-            this.providerRepository = providerRepository;
+            this.supplierRepository = supplierRepository;
         }
 
-        public ProviderViewModel GetProviders()
+        public ProviderViewModel GetSuppliers()
         {
             return new ProviderViewModel()
             {
-                Providers = this.providerRepository.GetProviders()
+                Providers = this.supplierRepository.GetSuppliers()
             };
         }
     }
