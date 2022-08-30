@@ -19,9 +19,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Orders.Domain", "Orders.Dom
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Orders.Infra.Data", "Orders.Infra.Data\Orders.Infra.Data.csproj", "{24CFFF6B-EB56-4F51-AAFE-7BAE8A90799E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Orders.Application", "Orders.Application\Orders.Application.csproj", "{A7F6CBE8-87EA-470C-8186-5C0E5FB2F96B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Orders.Application", "Orders.Application\Orders.Application.csproj", "{A7F6CBE8-87EA-470C-8186-5C0E5FB2F96B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Orders.Infra.ioC", "Orders.Infra.ioC\Orders.Infra.ioC.csproj", "{3CFDF64A-17CD-4AC0-8000-C72D6D25C780}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Orders.Infra.IoC", "Orders.Infra.ioC\Orders.Infra.IoC.csproj", "{3CFDF64A-17CD-4AC0-8000-C72D6D25C780}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

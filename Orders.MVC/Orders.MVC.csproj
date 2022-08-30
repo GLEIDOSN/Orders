@@ -15,6 +15,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Orders.Infra.Data\Orders.Infra.Data.csproj" />
+    <ProjectReference Include="..\Orders.Infra.ioC\Orders.Infra.IoC.csproj" />
   </ItemGroup>
 
 </Project>
