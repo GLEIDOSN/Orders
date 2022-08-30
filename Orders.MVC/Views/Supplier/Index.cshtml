@@ -2,10 +2,37 @@
 
 <div class="container body-content">
 	<div class="row supplier-content">
-		@foreach(var Supllier in Model.Suppliers)
-		{
-			<span>@Supllier.Contact</span>
-		}
+		<table class="table table-striped">
+			<thead>
+				<tr class="tableSupplier-content">
+					<th scope="col">Id</th>
+					<th scope="col">Social Reason</th>
+					<th scope="col">CNPJ</th>
+					<th scope="col">State</th>
+					<th scope="col">Email</th>
+					<th scope="col">Contact</th>
+					<th scope="col">Name Contact</th>
+					<th class="text-center" scope="col">Actions</th>
+				</tr>
+			</thead>
+			<tbody>
+				@foreach (var supplier in Model.Suppliers)
+				{
+					<tr>
+						<th scope="row">@supplier.Id</th>
+						<td>@supplier.SocialReason</td>
+						<td>@supplier.CNPJ</td>
+						<td>@supplier.State</td>
+						<td>@supplier.Email</td>
+						<td>@supplier.Contact</td>
+						<td>@supplier.NameContact</td>
+						<td><button type="button" class="btn btn-outline-info btn-sm">Details</button>
+						<button type="button" class="btn btn-outline-warning btn-sm">Edit</button>
+						<button type="button" class="btn btn-outline-danger btn-sm">Delete</button></td>
+					</tr>
+				}
+			</tbody>
+		</table>
 	</div>
 
 </div>
