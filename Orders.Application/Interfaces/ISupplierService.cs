@@ -10,5 +10,6 @@ namespace Orders.Application.Interfaces
     public interface ISupplierService
     {
         SupplierViewModel GetSuppliers();
+        void Crete(SupplierViewModel supplierViewModel);
     }
 }
