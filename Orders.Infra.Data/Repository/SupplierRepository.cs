@@ -18,6 +18,12 @@ namespace Orders.Infra.Data.Repository
             this.ordersDBContext = ordersDBContext;
         }
 
+        public void Add(Supplier supplier)
+        {
+            ordersDBContext.Suppliers.Add(supplier);
+            ordersDBContext.SaveChanges();
+        }
+
         public IEnumerable<Supplier> GetSuppliers()
         {
             return ordersDBContext.Suppliers;

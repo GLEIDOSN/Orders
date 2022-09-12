@@ -10,5 +10,6 @@ namespace Orders.Domain.Interfaces
     public interface ISupplierRepository
     {
         IEnumerable<Supplier> GetSuppliers();
+        void Add(Supplier supplier);
     }
 }
