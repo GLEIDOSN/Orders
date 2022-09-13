@@ -1,3 +1,4 @@
+using MediatR;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Identity;
@@ -36,6 +37,8 @@ namespace Orders.MVC
             {
                 options.UseSqlServer(Configuration.GetConnectionString("OrdersDbConnection"));
             });
+
+            services.AddMediatR(typeof(Startup));
 
             RegisterServices(services);
         }
