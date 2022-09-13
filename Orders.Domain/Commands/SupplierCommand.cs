@@ -9,6 +9,7 @@ namespace Orders.Domain.Commands
 {
     public abstract class SupplierCommand : Command
     {
+        public int Id { get; protected set; }
         public string SocialReason { get; protected set; }
         public string CNPJ { get; protected set; }
         public string State { get; protected set; }

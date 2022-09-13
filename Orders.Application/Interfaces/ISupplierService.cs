@@ -9,7 +9,7 @@ namespace Orders.Application.Interfaces
 {
     public interface ISupplierService
     {
-        SupplierViewModel GetSuppliers();
-        void Crete(SupplierViewModel supplierViewModel);
+        IEnumerable<SupplierViewModel> GetSuppliers();
+        void Create(SupplierViewModel supplierViewModel);
     }
 }

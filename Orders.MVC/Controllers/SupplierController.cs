@@ -18,8 +18,7 @@ namespace Orders.MVC.Controllers
         // GET: /<controller>/
         public IActionResult Index()
         {
-            SupplierViewModel model = supplierService.GetSuppliers();
-            return View(model);
+            return View(supplierService.GetSuppliers());
         }
     }
 }

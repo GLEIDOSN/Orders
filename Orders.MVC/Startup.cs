@@ -8,6 +8,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Orders.Infra.Data.Context;
 using Orders.Infra.IoC;
+using Orders.Mvc.Configurations;
 using Orders.MVC.Data;
 
 namespace Orders.MVC
@@ -39,6 +40,8 @@ namespace Orders.MVC
             });
 
             services.AddMediatR(typeof(Startup));
+
+            services.RegisterAutoMapper();
 
             RegisterServices(services);
         }

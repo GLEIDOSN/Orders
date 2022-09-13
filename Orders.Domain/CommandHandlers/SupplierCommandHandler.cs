@@ -20,6 +20,7 @@ namespace Orders.Domain.CommandHandlers
         {
             var supplier = new Supplier()
             {
+                Id = request.Id,
                 SocialReason = request.SocialReason,
                 CNPJ = request.CNPJ,
                 State = request.State,

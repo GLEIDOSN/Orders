@@ -1,11 +1,7 @@
 ﻿using Orders.Domain.Interfaces;
 using Orders.Domain.Models;
 using Orders.Infra.Data.Context;
-using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Orders.Infra.Data.Repository
 {
@@ -24,7 +20,7 @@ namespace Orders.Infra.Data.Repository
             ordersDBContext.SaveChanges();
         }
 
-        public IEnumerable<Supplier> GetSuppliers()
+        public IQueryable<Supplier> GetSuppliers()
         {
             return ordersDBContext.Suppliers;
         }
